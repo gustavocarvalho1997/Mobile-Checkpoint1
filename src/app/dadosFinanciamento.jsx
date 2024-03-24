@@ -2,6 +2,7 @@ import { Text, View, TextInput, Modal, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import cliente from './utils/cliente'
 import style from './style/style'
+import { StatusBar } from 'expo-status-bar'
 
 export default function DadosFinanciamento() {
   // Modal
@@ -135,6 +136,7 @@ export default function DadosFinanciamento() {
       <TouchableOpacity style={style.button} onPress={() => {abrirModal()}} >
         <Text style={style.textButton}>Calcular</Text>
       </TouchableOpacity>
+      <StatusBar style="auto" />
     </View>
   )
 }

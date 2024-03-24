@@ -3,6 +3,7 @@ import { Link } from 'expo-router';
 import React from 'react'
 import styles from './style/style';
 import cliente from './utils/cliente';
+import { StatusBar } from 'expo-status-bar';
 
 
 export default function Index() {
@@ -38,6 +39,7 @@ export default function Index() {
       <Text style={styles.label}>Data de Nascimento</Text>
       <TextInput style={styles.input} placeholder="Data de Nascimento" onChangeText={(e) => setDataNascimento(e)}/>
       <Link href={'/dadosFinanciamento'} style={styles.button} onPress={salvar}>Próximo</Link>
+      <StatusBar style="auto" />
     </View>
   )
 }
