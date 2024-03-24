@@ -1,3 +1,5 @@
+// Objetivo: Armazenar o objeto cliente para ser utilizado em outros arquivos
+
 let cliente = {
     nome: '',
     cpf: '',
