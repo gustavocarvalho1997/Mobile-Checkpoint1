@@ -8,6 +8,8 @@ import { StatusBar } from 'expo-status-bar';
 
 export default function Index() {
 
+  // States para cliente
+
   const [nome, setNome] = React.useState('')
   const [cpf, setCpf] = React.useState('')
   const [telefone, setTelefone] = React.useState('')
